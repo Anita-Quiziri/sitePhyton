@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Quiziri</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: azure;
+        }
+        
+        h1 {
+            color: black ;
+        }
+        
+        h3 {
+            color: black ;
+            font-size: 30px;
+        }
+        
+        .nomeVisitante {
+            color: black;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .botao {
+            height: 50px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .botao:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Bem vindo ao meu site</h1>
+    <h3>Esse site é sobre decoração infantil</h3>
+    <p>Bem Vindo!</p>
+    <p id="Visitante" class="nomeVisitante">Aguardando...</p>
+
+        <a href="https://www.knartes.com.br/kit-festa-bananas-de-pijamas?srsltid=AfmBOoqwwug3u7cjWEOELFZKtdTUfOR9Jo3mdsby0dhbR99YkFGxyFQj"><img src="_image.webp" alt=""></a>
+        <br>
+        <a href="https://www.knartes.com.br/kit-festa-bananas-de-pijamas?srsltid=AfmBOoqwwug3u7cjWEOELFZKtdTUfOR9Jo3mdsby0dhbR99YkFGxyFQj">Acesse a decoração de Bananas de Pijamas</a>
+
+        <h3>Cadastro</h3>
+        <label>Nome</label>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <label>Sobrenome</label>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <button onclick="enviar()" class="botao">Acessar</button>
+
+   <script>
+    function enviar() {
+        alert("Acesso realizado com sucesso!")
+    }
+    
+    // variavel pra pegar o nome do visitante 
+    var usuario = prompt("Digite o seu nome: ")
+    
+    // pegar o valor da variavel e imprimir na tela
+    document.getElementById("Visitante").innerHTML = usuario
+   </script>
+   <center>
+</body>
+</html>
